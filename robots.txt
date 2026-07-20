@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edwin-space.github.io/echo-legal/sitemap.xml
+Sitemap: https://edwin-space.github.io/echo-spcae/sitemap.xml
