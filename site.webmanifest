@@ -1,0 +1,10 @@
+{
+  "name": "Echo",
+  "short_name": "Echo",
+  "lang": "ko",
+  "start_url": "/echo-legal/",
+  "display": "standalone",
+  "background_color": "#0a0d17",
+  "theme_color": "#0a0d17",
+  "icons": [{"src": "assets/echo-icon.png", "sizes": "512x512", "type": "image/png"}]
+}
