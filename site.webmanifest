@@ -2,7 +2,7 @@
   "name": "Echo",
   "short_name": "Echo",
   "lang": "ko",
-  "start_url": "/echo-spcae/",
+  "start_url": "/echo-space/",
   "display": "standalone",
   "background_color": "#0a0d17",
   "theme_color": "#0a0d17",
