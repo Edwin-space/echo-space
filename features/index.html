@@ -1,122 +1,148 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Echo 기능 가이드 – 실제 화면으로 보는 사용법</title>
-  <meta name="description" content="Echo의 실제 화면으로 GPS 운동 기록, 어제의 나와의 메아리, 기록과 인사이트, 목표와 도전, Apple Watch 단독 실행까지 사용법을 안내합니다.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Echo 기능 가이드 — 실제 화면으로 보는 사용법</title>
+  <meta name="description" content="Echo의 실제 앱 화면으로 운동 시작부터 기록 확인, Apple Watch 단독 실행까지 순서대로 안내합니다.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <link rel="canonical" href="https://edwin-space.github.io/echo-space/features/">
   <link rel="alternate" hreflang="ko" href="https://edwin-space.github.io/echo-space/features/">
   <link rel="alternate" hreflang="en" href="https://edwin-space.github.io/echo-space/features/en/">
   <link rel="alternate" hreflang="x-default" href="https://edwin-space.github.io/echo-space/features/">
+  <meta name="theme-color" content="#07080B" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FBFBF9" media="(prefers-color-scheme: light)">
   <link rel="icon" href="../assets/echo-icon.png">
+  <link rel="apple-touch-icon" href="../assets/echo-icon.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../assets/styles.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Echo">
-  <meta property="og:title" content="Echo 기능 가이드 – 실제 화면으로 보는 사용법">
-  <meta property="og:description" content="GPS 운동 기록부터 Apple Watch 단독 실행까지, 실제 화면으로 확인하는 Echo 사용법.">
+  <meta property="og:title" content="Echo 기능 가이드 — 실제 화면으로 보는 사용법">
+  <meta property="og:description" content="Echo의 실제 앱 화면으로 운동 시작부터 기록 확인, Apple Watch 단독 실행까지 순서대로 안내합니다.">
   <meta property="og:url" content="https://edwin-space.github.io/echo-space/features/">
-  <meta property="og:image" content="https://edwin-space.github.io/echo-space/assets/echo-feature.png">
+  <meta property="og:image" content="https://edwin-space.github.io/echo-space/assets/screens/01_home.png">
+  <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="../assets/styles.css?v=20260902b">
 </head>
 <body>
-  <a class="skip-link" href="#content">본문으로 이동</a>
-  <header><nav class="nav" aria-label="주요 메뉴"><a class="brand" href="../"><img src="../assets/echo-icon.png" alt="">Echo</a><div class="nav-links"><a aria-current="page" href="./">기능</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../support/">지원</a><a lang="en" href="en/">English</a></div></nav></header>
-  <main id="content">
-    <div class="guide-hero">
-      <p class="eyebrow">How Echo works</p>
-      <h1>실제 화면으로 보는<br>Echo 사용법</h1>
-      <p class="lede">기능 이름만 나열하지 않습니다. 앱 안의 실제 화면을 그대로 보여드리며, 어떻게 시작하고 어떻게 쓰는지 순서대로 안내합니다.</p>
+<a class="skip-link" href="#content">본문으로 이동</a>
+
+<header class="nav" id="nav">
+  <div class="nav__bar wrap">
+    <a class="brand" href="../"><img src="../assets/echo-icon.png" alt="" width="30" height="30">Echo</a>
+    <nav class="nav__links" id="navLinks" aria-label="주요 메뉴"><a href="../features/">기능</a><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../support/">지원</a></nav>
+    <div class="nav__actions">
+      <a class="lang-btn" href="en/" hreflang="en" lang="en">EN</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="화면 테마 전환"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.1 5.1l1.4 1.4M17.5 17.5l1.4 1.4M18.9 5.1l-1.4 1.4M6.5 17.5l-1.4 1.4"/></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg></button>
+      <a class="btn btn--solid btn--sm" href="https://apps.apple.com/kr/app/id6795827065" target="_blank" rel="noopener">App Store</a>
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="sheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
     </div>
+  </div>
+  <div class="nav__progress"><i id="prog"></i></div>
+</header>
 
-    <section class="showcase">
-      <div class="showcase-media"><img src="../assets/screens/02_sport_select.png" width="540" height="1173" alt="Echo 종목 선택 화면 — 러닝이 선택된 상태로 페이스·심박·경로 안내와 러닝 시작 버튼이 보인다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">Getting started</p>
-        <h2>운동을 시작하는 방법</h2>
-        <p class="lede">종목을 고르고 버튼 하나만 누르면 바로 기록이 시작됩니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>종목을 선택하세요</strong><span>러닝·라이딩·걷기·등산·트레일 러닝 중 오늘 할 운동을 고릅니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>연결 상태를 확인하세요</strong><span>오른쪽 위에서 Apple Watch 연결 여부를 바로 확인할 수 있습니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>운동 시작을 누르세요</strong><span>페이스, 심박, 경로 기록이 즉시 시작됩니다.</span></div></li>
-        </ol>
+<div class="sheet" id="sheet"><a href="../"><span>01</span>홈</a><a href="../features/"><span>02</span>기능</a><a href="../privacy/"><span>03</span>개인정보처리방침</a><a href="../terms/"><span>04</span>이용약관</a><a href="../support/"><span>05</span>지원</a></div>
+
+<main id="content">
+<section class="hero" style="padding-bottom:clamp(30px,4vw,50px)">
+  <div class="hero__bg" aria-hidden="true"><div class="hero__grid"></div><div class="hero__glow"></div></div>
+  <div class="wrap" style="position:relative">
+    <p class="eyebrow rv">How Echo works</p>
+    <h1 class="rv" style="margin:24px 0 26px;max-width:16ch">실제 화면으로 보는<br>Echo 사용법</h1>
+    <p class="lede rv">기능 이름만 나열하지 않습니다. 앱 안의 실제 화면을 그대로 보여드리며, 어떻게 시작하고 어떻게 쓰는지 순서대로 안내합니다.</p>
+  </div>
+</section>
+<div class="wrap"><section class="showcase rv">
+  <div class="showcase__media"><div class="device"><img src="../assets/screens/02_sport_select.png" width="540" height="1173" alt="Echo 종목 선택 화면 — 러닝이 선택된 상태로 페이스·심박·경로 안내와 러닝 시작 버튼이 보인다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">Getting started</p>
+    <h2>운동을 시작하는 방법</h2>
+    <p class="lede">종목을 고르고 버튼 하나만 누르면 바로 기록이 시작됩니다.</p>
+    <ol class="steps"><li><div><strong>종목을 선택하세요</strong><span>러닝·라이딩·걷기·등산·트레일 러닝 중 오늘 할 운동을 고릅니다.</span></div></li><li><div><strong>연결 상태를 확인하세요</strong><span>오른쪽 위에서 Apple Watch 연결 여부를 바로 확인할 수 있습니다.</span></div></li><li><div><strong>운동 시작을 누르세요</strong><span>페이스, 심박, 경로 기록이 즉시 시작됩니다.</span></div></li></ol>
+  </div>
+</section><section class="showcase reverse rv">
+  <div class="showcase__media"><div class="device"><img src="../assets/screens/03_live_tracking.png" width="540" height="1173" alt="Echo 실시간 트래킹 화면 — 3D 지도에 이동 경로와 현재 페이스, Watch 심박이 표시된다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">Live tracking</p>
+    <h2>운동 중에는 이렇게 보입니다</h2>
+    <p class="lede">지도와 핵심 수치만 남기고, 나머지는 화면 아래로 정리했습니다.</p>
+    <ol class="steps"><li><div><strong>경로가 실시간으로 그려집니다</strong><span>3D 지도 위에 지금까지 이동한 경로가 표시됩니다.</span></div></li><li><div><strong>현재 페이스를 확인하세요</strong><span>화면 아래에서 현재 페이스와 Apple Watch 심박을 함께 봅니다.</span></div></li><li><div><strong>일시정지 또는 종료</strong><span>잠깐 멈추거나, 운동을 마치면 바로 기록으로 저장됩니다.</span></div></li></ol>
+  </div>
+</section><section class="showcase rv">
+  <div class="showcase__media"><div class="device"><img src="../assets/screens/01_home.png" width="540" height="1173" alt="Echo 홈 화면 — 오늘의 날씨, 활동 링, 이번 주 요약이 표시된다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">Today, at a glance</p>
+    <h2>홈에서 오늘 하루를 확인하세요</h2>
+    <p class="lede">운동을 시작하지 않아도, 홈 화면 하나로 오늘의 상태를 알 수 있습니다.</p>
+    <ol class="steps"><li><div><strong>날씨를 먼저 보세요</strong><span>현재 위치의 기상청 예보와 운동 강도 안내를 확인합니다.</span></div></li><li><div><strong>활동 링으로 오늘을 확인하세요</strong><span>걸음 수, 활동 에너지, 운동 횟수를 한 번에 봅니다.</span></div></li><li><div><strong>이번 주 요약을 확인하세요</strong><span>거리·횟수·시간과 Echo 인사이트로 하루를 마무리합니다.</span></div></li></ol>
+  </div>
+</section><section class="showcase reverse rv">
+  <div class="showcase__media"><div class="device"><img src="../assets/screens/04_history.png" width="540" height="1173" alt="Echo 기록 화면 — 요약·통계·리포트 탭과 종목별 필터, 최근 운동 목록이 표시된다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">History and insight</p>
+    <h2>쌓인 기록에서 변화를 발견하세요</h2>
+    <p class="lede">요약, 통계, 리포트 세 가지 방식으로 같은 기록을 다르게 볼 수 있습니다.</p>
+    <ol class="steps"><li><div><strong>탭을 전환해보세요</strong><span>요약은 한눈에, 통계는 추이로, 리포트는 월간 단위로 보여줍니다.</span></div></li><li><div><strong>종목별로 필터링하세요</strong><span>전체 또는 러닝·라이딩·걷기 등 종목 하나만 골라 볼 수 있습니다.</span></div></li><li><div><strong>운동을 눌러 자세히 보세요</strong><span>경로, 스플릿, 고도, 개인 기록 배지까지 확인합니다.</span></div></li></ol>
+  </div>
+</section><section class="showcase rv">
+  <div class="showcase__media"><div class="device"><img src="../assets/screens/05_challenges.png" width="540" height="1173" alt="Echo 도전 화면 — 이번 주 목표 진행률과 나를 위한 도전 카드가 표시된다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">Goals and challenges</p>
+    <h2>목표는 내가 직접 정합니다</h2>
+    <p class="lede">타인과의 순위 대신, 나의 지난 기록을 기준으로 도전을 제안합니다.</p>
+    <ol class="steps"><li><div><strong>이번 주 목표를 설정하세요</strong><span>운동 횟수, 시간, 거리, 걸음 수 중 원하는 목표를 고르고 값을 정합니다.</span></div></li><li><div><strong>나를 위한 도전을 확인하세요</strong><span>&ldquo;지난 나 넘기&rdquo;처럼 직전 기록을 기준으로 한 도전이 자동으로 제안됩니다.</span></div></li><li><div><strong>진행 막대로 확인하세요</strong><span>각 카드의 진행률이 실시간으로 채워집니다.</span></div></li></ol>
+  </div>
+</section><section class="showcase reverse rv">
+  <div class="showcase__media"><div class="device device--watch"><img src="../assets/screens/watch_02_active.png" width="416" height="496" alt="Apple Watch에서 러닝을 기록 중인 화면 — 페이스와 거리, 일시정지·랩·종료 버튼이 보인다" loading="lazy" decoding="async"></div></div>
+  <div class="showcase__text">
+    <p class="eyebrow">Apple Watch</p>
+    <h2>워치만 차고 나가도 됩니다</h2>
+    <p class="lede">iPhone 없이 Apple Watch만으로 운동을 시작하고 기록할 수 있습니다.</p>
+    <ol class="steps"><li><div><strong>워치에서 바로 시작하세요</strong><span>종목을 고르면 워치 단독으로 GPS 기록이 시작됩니다.</span></div></li><li><div><strong>손목에서 확인하세요</strong><span>페이스, 거리, 경과 시간을 워치 화면에서 바로 봅니다.</span></div></li><li><div><strong>iPhone과 자동으로 동기화됩니다</strong><span>운동을 마치면 iPhone의 기록에 자동으로 반영됩니다.</span></div></li></ol>
+  </div>
+</section></div>
+<section class="sec sec--tight" id="download">
+  <div class="wrap">
+    <div class="band rv">
+      <p class="eyebrow eyebrow--plain" style="margin-bottom:18px">Get Echo</p>
+      <h2>지금 시작하세요</h2>
+      <p class="lede">iPhone과 Apple Watch에서 바로 받을 수 있습니다. Android 버전은 준비 중입니다.</p>
+      <div class="badges"><a class="badge" href="https://apps.apple.com/kr/app/id6795827065" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.3-2.5 1.3-2.5s-2.5-1-2.5-3.6ZM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4Z"/></svg><span><small>다운로드</small><b>App Store</b></span></a><span class="badge is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 3.1v17.8a1 1 0 0 0 1.5.86l13.1-8.9a1 1 0 0 0 0-1.72L6.1 2.24a1 1 0 0 0-1.5.86Z"/><path d="M5 2.7 15.2 12.9M5 21.3 15.2 11.1"/></svg><span><small>준비 중</small><b>Google Play</b></span></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <div class="foot__brand"><img src="../assets/echo-icon.png" alt="" width="30" height="30">Echo</div>
+        <p class="small" style="max-width:34ch">러닝 · 걷기 · 자전거 GPS 운동 기록</p>
+        <p class="small" style="margin-top:14px"><a href="https://funny-square.com" target="_blank" rel="noopener">FunnySquare Inc. <span aria-hidden="true">&#8599;</span></a></p>
       </div>
-    </section>
-
-    <section class="showcase reverse">
-      <div class="showcase-media"><img src="../assets/screens/03_live_tracking.png" width="540" height="1173" alt="Echo 실시간 트래킹 화면 — 3D 지도에 이동 경로와 현재 페이스, Watch 심박이 표시된다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">Live tracking</p>
-        <h2>운동 중에는 이렇게 보입니다</h2>
-        <p class="lede">지도와 핵심 수치만 남기고, 나머지는 화면 아래로 정리했습니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>경로가 실시간으로 그려집니다</strong><span>3D 지도 위에 지금까지 이동한 경로가 표시됩니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>현재 페이스를 확인하세요</strong><span>화면 아래에서 현재 페이스와 Apple Watch 심박을 함께 봅니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>일시정지 또는 종료</strong><span>잠깐 멈추거나, 운동을 마치면 바로 기록으로 저장됩니다.</span></div></li>
-        </ol>
+      <div>
+        <h4>서비스</h4>
+        <ul><li><a href="../features/">기능 가이드</a></li><li><a href="#download">다운로드</a></li></ul>
       </div>
-    </section>
-
-    <section class="showcase">
-      <div class="showcase-media"><img src="../assets/screens/01_home.png" width="540" height="1173" alt="Echo 홈 화면 — 오늘의 날씨, 활동 링, 이번 주 요약이 표시된다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">Today, at a glance</p>
-        <h2>홈에서 오늘 하루를 확인하세요</h2>
-        <p class="lede">운동을 시작하지 않아도, 홈 화면 하나로 오늘의 상태를 알 수 있습니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>날씨를 먼저 보세요</strong><span>현재 위치의 기상청 예보와 운동 강도 안내를 확인합니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>활동 링으로 오늘을 확인하세요</strong><span>걸음 수, 활동 에너지, 운동 횟수를 한 번에 봅니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>이번 주 요약을 확인하세요</strong><span>거리·횟수·시간과 Echo 인사이트로 하루를 마무리합니다.</span></div></li>
-        </ol>
+      <div>
+        <h4>정책 · 지원</h4>
+        <ul><li><a href="../privacy/">개인정보처리방침</a></li><li><a href="../terms/">이용약관</a></li><li><a href="../support/">지원 및 문의</a></li><li><a href="mailto:helper@gleam.com">이메일 문의</a></li></ul>
       </div>
-    </section>
+    </div>
+    <div class="foot__meta">
+      <span>&copy; <span id="yr">2026</span> Echo</span>
+      <a href="https://funny-square.com" target="_blank" rel="noopener">funny-square.com</a>
+      <a class="to-top" href="#top">맨 위로 <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </div>
+</footer>
 
-    <section class="showcase reverse">
-      <div class="showcase-media"><img src="../assets/screens/04_history.png" width="540" height="1173" alt="Echo 기록 화면 — 요약·통계·리포트 탭과 종목별 필터, 최근 운동 목록이 표시된다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">History and insight</p>
-        <h2>쌓인 기록에서 변화를 발견하세요</h2>
-        <p class="lede">요약, 통계, 리포트 세 가지 방식으로 같은 기록을 다르게 볼 수 있습니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>탭을 전환해보세요</strong><span>요약은 한눈에, 통계는 추이로, 리포트는 월간 단위로 보여줍니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>종목별로 필터링하세요</strong><span>전체 또는 러닝·라이딩·걷기 등 종목 하나만 골라 볼 수 있습니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>운동을 눌러 자세히 보세요</strong><span>경로, 스플릿, 고도, 개인 기록 배지까지 확인합니다.</span></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="showcase">
-      <div class="showcase-media"><img src="../assets/screens/05_challenges.png" width="540" height="1173" alt="Echo 도전 화면 — 이번 주 목표 진행률과 나를 위한 도전 카드가 표시된다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">Goals and challenges</p>
-        <h2>목표는 내가 직접 정합니다</h2>
-        <p class="lede">타인과의 순위 대신, 나의 지난 기록을 기준으로 도전을 제안합니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>이번 주 목표를 설정하세요</strong><span>운동 횟수, 시간, 거리, 걸음 수 중 원하는 목표를 고르고 값을 정합니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>나를 위한 도전을 확인하세요</strong><span>"지난 나 넘기"처럼 직전 기록을 기준으로 한 도전이 자동으로 제안됩니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>진행 막대로 확인하세요</strong><span>각 카드의 진행률이 실시간으로 채워집니다.</span></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="showcase reverse">
-      <div class="showcase-media watch"><img src="../assets/screens/watch_02_active.png" width="416" height="496" alt="Apple Watch에서 러닝을 기록 중인 화면 — 페이스와 거리, 일시정지·랩·종료 버튼이 보인다" loading="lazy"></div>
-      <div class="showcase-text">
-        <p class="eyebrow">Apple Watch</p>
-        <h2>워치만 차고 나가도 됩니다</h2>
-        <p class="lede">iPhone 없이 Apple Watch만으로 운동을 시작하고 기록할 수 있습니다.</p>
-        <ol class="step-list">
-          <li><span class="n">1</span><div><strong>워치에서 바로 시작하세요</strong><span>종목을 고르면 워치 단독으로 GPS 기록이 시작됩니다.</span></div></li>
-          <li><span class="n">2</span><div><strong>손목에서 확인하세요</strong><span>페이스, 거리, 경과 시간을 워치 화면에서 바로 봅니다.</span></div></li>
-          <li><span class="n">3</span><div><strong>iPhone과 자동으로 동기화됩니다</strong><span>운동을 마치면 iPhone의 기록에 자동으로 반영됩니다.</span></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="download"><div class="download"><div><p class="eyebrow">Get Echo</p><h2>지금 시작하세요</h2><p>iPhone과 Apple Watch에서 바로 받을 수 있습니다. Android 버전은 준비 중입니다.</p></div><div class="store-badges"><a class="store-badge" href="https://apps.apple.com/us/app/id6795827065"><span><small>Download on the</small>App Store</span></a><span class="store-badge disabled" aria-disabled="true"><span><small>준비 중</small>Google Play</span></span></div></div></section>
-  </main>
-  <footer><div class="footer-inner"><span>© 2026 Echo · 운영자 Edwin</span><nav aria-label="푸터 메뉴"><a href="../privacy/">개인정보처리방침</a><a href="../terms/">이용약관</a><a href="../support/">지원</a><a href="mailto:helper@gleam.com">문의</a></nav></div></footer>
+<script src="../assets/site.js?v=20260902b"></script>
 </body>
 </html>

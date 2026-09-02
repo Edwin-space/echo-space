@@ -1,67 +1,176 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Echo – 러닝·걷기·자전거 GPS 운동 기록</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Echo — 기록은 나에게 돌아옵니다</title>
   <meta name="description" content="Echo는 러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스, 날씨, 운동 통계와 도전 과제를 기록하는 개인 피트니스 앱입니다.">
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1"><meta name="google-site-verification" content="z0ioflHCGVZzn4BugQmXj199TF7ZNGlCG2bMhkPhx_M" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <meta name="google-site-verification" content="z0ioflHCGVZzn4BugQmXj199TF7ZNGlCG2bMhkPhx_M">
   <link rel="canonical" href="https://edwin-space.github.io/echo-space/">
   <link rel="alternate" hreflang="ko" href="https://edwin-space.github.io/echo-space/">
   <link rel="alternate" hreflang="en" href="https://edwin-space.github.io/echo-space/en/">
   <link rel="alternate" hreflang="x-default" href="https://edwin-space.github.io/echo-space/">
+  <meta name="theme-color" content="#07080B" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FBFBF9" media="(prefers-color-scheme: light)">
   <link rel="icon" href="assets/echo-icon.png">
+  <link rel="apple-touch-icon" href="assets/echo-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/styles.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Echo">
-  <meta property="og:title" content="Echo – 기록은 나에게 돌아옵니다">
-  <meta property="og:description" content="러닝·걷기·자전거 GPS 기록과 날씨, 운동 통계를 한곳에서 확인하세요.">
+  <meta property="og:title" content="Echo — 기록은 나에게 돌아옵니다">
+  <meta property="og:description" content="Echo는 러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스, 날씨, 운동 통계와 도전 과제를 기록하는 개인 피트니스 앱입니다.">
   <meta property="og:url" content="https://edwin-space.github.io/echo-space/">
   <meta property="og:image" content="https://edwin-space.github.io/echo-space/assets/echo-feature.png">
+  <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/styles.css?v=20260902b">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Echo",
-    "alternateName": "에코",
-    "description": "러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스, 날씨와 운동 통계를 기록하는 개인 피트니스 앱",
+    "alternateName": "\uc5d0\ucf54",
+    "description": "Echo는 러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스, 날씨, 운동 통계와 도전 과제를 기록하는 개인 피트니스 앱입니다.",
     "applicationCategory": "HealthApplication",
-    "operatingSystem": "Android 9 or later; iOS 17 or later",
+    "operatingSystem": "iOS 17 or later; watchOS",
     "inLanguage": ["ko", "en"],
+    "url": "https://edwin-space.github.io/echo-space/",
+    "downloadUrl": "https://apps.apple.com/kr/app/id6795827065",
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW", "availability": "https://schema.org/InStock"},
-    "downloadUrl": "https://apps.apple.com/us/app/id6795827065",
-    "author": {"@type": "Person", "name": "Edwin"},
-    "privacyPolicy": "https://edwin-space.github.io/echo-space/privacy/"
+    "publisher": {"@type": "Organization", "name": "FunnySquare Inc.", "url": "https://funny-square.com"},
+    "privacyPolicy": "https://edwin-space.github.io/echo-space/privacy/",
+    "screenshot": "https://edwin-space.github.io/echo-space/assets/screens/01_home.png"
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#content">본문으로 이동</a>
-  <header><nav class="nav" aria-label="주요 메뉴"><a class="brand" href="./"><img src="assets/echo-icon.png" alt="">Echo</a><div class="nav-links"><a href="features/">기능</a><a href="privacy/">개인정보처리방침</a><a href="terms/">이용약관</a><a href="support/">지원</a><a lang="en" href="en/">English</a></div></nav></header>
-  <main id="content">
-    <section class="hero">
-      <div><p class="eyebrow">Return, not reaction</p><h1>기록은<br>나에게 돌아옵니다.</h1><p class="lede">러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스를 기록하고 날씨, 통계와 도전 과제로 나만의 변화를 돌아보세요. 평가와 반응을 얻는 피트니스가 아니라, 나의 운동이 나에게 돌아오는 피트니스입니다.</p><div class="actions"><a class="button" href="https://apps.apple.com/us/app/id6795827065">App Store에서 다운로드</a><a class="button secondary" href="#features">기능 살펴보기</a></div></div>
-      <div class="hero-card"><img src="assets/echo-feature.png" width="1024" height="500" alt="메아리와 운동 경로를 표현한 Echo 브랜드 그래픽"></div>
-    </section>
-    <section id="features"><p class="eyebrow">Designed for your own progress</p><h2>타인의 피드보다 내 움직임에 집중합니다</h2><div class="grid">
-      <article class="card"><h3>GPS 운동 기록</h3><p>러닝·걷기·자전거의 경로, 거리, 시간, 페이스 또는 속도와 예상 칼로리를 기록합니다.</p></article>
-      <article class="card"><h3>어제의 나와의 메아리</h3><p>같은 종목의 가장 최근 기록과 실시간으로 페이스를 비교합니다. 타인이 아니라 어제의 나와 겨룹니다.</p></article>
-      <article class="card"><h3>날씨와 인사이트</h3><p>현재 위치의 기상청 예보와 월간 통계, 개인 기록, 도전 진행률을 한곳에서 확인합니다.</p></article>
-      <article class="card"><h3>목표와 도전과제</h3><p>주간 목표를 직접 정하고, 나에게 맞는 도전과제로 꾸준함을 이어갑니다.</p></article>
-      <article class="card"><h3>Apple Watch 단독 실행</h3><p>워치만 차고 나가도 운동을 기록합니다. 잠금화면 라이브 액티비티와 홈 화면 위젯도 지원합니다.</p></article>
-      <article class="card"><h3>선택 가능한 데이터</h3><p>상세 운동 기록은 기기에 저장하고, 이용 분석·진단·알림은 각각 사용자가 선택합니다.</p></article>
-    </div><p style="margin-top:24px"><a class="button secondary" href="features/">실제 화면으로 사용법 보기 →</a></p></section>
-    <section><p class="eyebrow">Brand promise</p><h2>네 가지 원칙으로 만듭니다</h2><div class="pillars">
-      <article class="pillar"><span class="num">01</span><h3>Private by default</h3><p>운동 경로와 건강 기록은 기본적으로 나의 기기에 머뭅니다.</p></article>
-      <article class="pillar"><span class="num">02</span><h3>Quiet performance</h3><p>순위·좋아요 대신, 나의 흐름과 회고에 집중합니다.</p></article>
-      <article class="pillar"><span class="num">03</span><h3>Continuous fitness</h3><p>러닝에서 시작해 등산·수영·근력으로 이어갈 예정입니다.</p></article>
-      <article class="pillar"><span class="num">04</span><h3>Clear ownership</h3><p>기록을 GPX로 내보내고 옮길 수 있는 데이터 주권을 지향합니다.</p></article>
-    </div></section>
-    <section><h2>운동을 시작했을 때만 경로를 기록합니다</h2><p class="lede">Echo는 평소 이동 경로를 기록하지 않습니다. 현재 위치 날씨를 확인하거나 사용자가 운동 기록을 시작한 경우에만 필요한 위치 기능을 사용합니다.</p><div class="notice">Echo는 의료 진단, 치료 또는 응급 서비스를 제공하지 않습니다. 날씨·GPS·페이스·속도·칼로리 정보는 참고용이며 환경에 따라 실제 값과 차이가 날 수 있습니다.</div></section>
-    <section id="download"><div class="download"><div><p class="eyebrow">Get Echo</p><h2>지금 시작하세요</h2><p>iPhone과 Apple Watch에서 바로 받을 수 있습니다. Android 버전은 준비 중입니다.</p></div><div class="store-badges"><a class="store-badge" href="https://apps.apple.com/us/app/id6795827065"><span><small>Download on the</small>App Store</span></a><span class="store-badge disabled" aria-disabled="true"><span><small>준비 중</small>Google Play</span></span></div></div></section>
-  </main>
-  <footer><div class="footer-inner"><span>© 2026 Echo · 운영자 Edwin</span><nav aria-label="푸터 메뉴"><a href="privacy/">개인정보처리방침</a><a href="terms/">이용약관</a><a href="support/">지원</a><a href="mailto:helper@gleam.com">문의</a></nav></div></footer>
+<a class="skip-link" href="#content">본문으로 이동</a>
+
+<header class="nav" id="nav">
+  <div class="nav__bar wrap">
+    <a class="brand" href="./"><img src="assets/echo-icon.png" alt="" width="30" height="30">Echo</a>
+    <nav class="nav__links" id="navLinks" aria-label="주요 메뉴"><a href="#features">기능</a><a href="#pillars">원칙</a><a href="#sports">종목</a><a href="features/">화면 가이드</a><a href="support/">지원</a></nav>
+    <div class="nav__actions">
+      <a class="lang-btn" href="en/" hreflang="en" lang="en">EN</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="화면 테마 전환"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.1 5.1l1.4 1.4M17.5 17.5l1.4 1.4M18.9 5.1l-1.4 1.4M6.5 17.5l-1.4 1.4"/></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z"/></svg></button>
+      <a class="btn btn--solid btn--sm" href="https://apps.apple.com/kr/app/id6795827065" target="_blank" rel="noopener">App Store</a>
+      <button class="icon-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="sheet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </div>
+  <div class="nav__progress"><i id="prog"></i></div>
+</header>
+
+<div class="sheet" id="sheet"><a href="#features"><span>01</span>기능</a><a href="#pillars"><span>02</span>원칙</a><a href="#sports"><span>03</span>종목</a><a href="features/"><span>04</span>화면 가이드</a><a href="privacy/"><span>05</span>개인정보처리방침</a><a href="terms/"><span>06</span>이용약관</a><a href="support/"><span>07</span>지원</a></div>
+
+<main id="content">
+<section class="hero" id="top">
+  <div class="hero__bg" aria-hidden="true"><div class="hero__grid"></div><div class="hero__glow"></div></div>
+  <div class="wrap hero__in">
+    <div>
+      <p class="eyebrow rv">Return, not reaction</p>
+      <h1 class="rv">기록은<br><em>나에게</em> 돌아옵니다.</h1>
+      <p class="lede rv">러닝, 걷기, 자전거 라이딩의 GPS 경로와 페이스를 기록하고 날씨, 통계, 도전 과제로 나만의 변화를 돌아봅니다. 평가와 반응을 얻는 피트니스가 아니라, 나의 운동이 나에게 돌아오는 피트니스입니다.</p>
+      <div class="hero__cta rv"><div class="badges"><a class="badge" href="https://apps.apple.com/kr/app/id6795827065" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.3-2.5 1.3-2.5s-2.5-1-2.5-3.6ZM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4Z"/></svg><span><small>다운로드</small><b>App Store</b></span></a><span class="badge is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 3.1v17.8a1 1 0 0 0 1.5.86l13.1-8.9a1 1 0 0 0 0-1.72L6.1 2.24a1 1 0 0 0-1.5.86Z"/><path d="M5 2.7 15.2 12.9M5 21.3 15.2 11.1"/></svg><span><small>준비 중</small><b>Google Play</b></span></span></div></div>
+      <p class="hero__meta rv"><span>iOS 17+</span><span>Apple Watch</span><span>무료</span></p>
+    </div>
+    <div class="device-stack rv">
+      <div class="device"><img src="assets/screens/01_home.png" width="540" height="1173" alt="Echo 홈 화면 — 종목 선택, 날씨, 활동 링과 이번 주 요약" fetchpriority="high" decoding="async"></div>
+    </div>
+  </div>
+</section>
+<section class="sec sec--alt" id="echo">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow rv">01 — The echo</p>
+      <h2 class="rv">어제의 나와 겨룹니다</h2>
+      <p class="lede rv">Echo라는 이름 그대로입니다. 같은 종목의 가장 최근 기록이 메아리처럼 돌아와, 지금의 페이스와 나란히 놓입니다. 비교 대상은 언제나 나 자신입니다.</p>
+    </div>
+    <div class="callout rv">
+      <h2 style="font-size:clamp(1.3rem,2.4vw,1.8rem)">순위표가 없습니다</h2>
+      <p class="lede" style="max-width:52ch">좋아요도, 팔로워도, 공개 랭킹도 없습니다. 남길 것은 기록이고, 돌아볼 것은 나의 흐름입니다.</p>
+    </div>
+  </div>
+</section>
+<section class="sec" id="features">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow rv">02 — Features</p>
+      <h2 class="rv">타인의 피드보다<br>내 움직임에 집중합니다</h2>
+      <p class="lede rv">필요한 것만 남기고, 나머지는 화면 밖으로 정리했습니다.</p>
+    </div>
+    <div class="grid-3 rv"><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a3 3 0 1 1 0-6h12a3 3 0 1 0 0-6H8"/><circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="19" r="2.2"/></svg></span><h3>GPS 운동 기록</h3><p>러닝·걷기·자전거의 경로, 거리, 시간, 페이스 또는 속도와 예상 칼로리를 기록합니다.</p></article><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M7.5 9.2a6 6 0 0 1 0 5.6M4.4 6.4a10 10 0 0 1 0 11.2M11 11.4a1.2 1.2 0 0 1 0 1.2"/><path d="M14.4 6.4a10 10 0 0 0 0 11.2M17.6 9.2a6 6 0 0 0 0 5.6"/></svg></span><h3>어제의 나와의 메아리</h3><p>같은 종목의 가장 최근 기록과 실시간으로 페이스를 비교합니다. 타인이 아니라 어제의 나와 겨룹니다.</p></article><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 18a3.5 3.5 0 0 0 0-7 5 5 0 0 0-9.6-1.4A4 4 0 0 0 8 18Z"/><path d="M12 4V2.6M5.6 6.2 4.7 5.2M18.4 6.2l.9-1"/></svg></span><h3>날씨와 인사이트</h3><p>현재 위치의 기상청 예보와 월간 통계, 개인 기록, 도전 진행률을 한곳에서 확인합니다.</p></article><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1"/></svg></span><h3>목표와 도전과제</h3><p>주간 목표를 직접 정하고, 나에게 맞는 도전과제로 꾸준함을 이어갑니다.</p></article><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="3.4"/><path d="M9 3.2h6M9 20.8h6"/></svg></span><h3>Apple Watch 단독 실행</h3><p>워치만 차고 나가도 운동을 기록합니다. 잠금화면 라이브 액티비티와 홈 화면 위젯도 지원합니다.</p></article><article class="card"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10.5" rx="2.6"/><path d="M8 10V7.2a4 4 0 0 1 8 0V10"/></svg></span><h3>선택 가능한 데이터</h3><p>상세 운동 기록은 기기에 저장하고, 이용 분석·진단·알림은 각각 사용자가 선택합니다.</p></article></div>
+    <p style="margin-top:28px" class="rv"><a class="btn btn--ghost" href="features/">실제 화면으로 사용법 보기 <span class="arr" aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+<section class="sec sec--alt" id="pillars">
+  <div class="wrap">
+    <div class="sec__head"><p class="eyebrow rv">03 — Principles</p><h2 class="rv">네 가지 원칙으로 만듭니다</h2></div>
+    <div class="grid-4 rv"><article class="pill-card"><span class="n">01</span><h3>Private by default</h3><p>운동 경로와 건강 기록은 기본적으로 나의 기기에 머뭅니다.</p></article><article class="pill-card"><span class="n">02</span><h3>Quiet performance</h3><p>순위·좋아요 대신, 나의 흐름과 회고에 집중합니다.</p></article><article class="pill-card"><span class="n">03</span><h3>Continuous fitness</h3><p>러닝에서 시작해 등산·수영·근력으로 이어갑니다.</p></article><article class="pill-card"><span class="n">04</span><h3>Clear ownership</h3><p>기록을 GPX로 내보내고 옮길 수 있는 데이터 주권을 지향합니다.</p></article></div>
+  </div>
+</section>
+<section class="sec" id="sports">
+  <div class="wrap">
+    <div class="sec__head">
+      <p class="eyebrow rv">04 — Sports</p>
+      <h2 class="rv">하나의 기록, 모든 움직임</h2>
+      <p class="lede rv">종목은 컬러와 아이콘으로만 구분합니다. 어떤 운동을 하든 기록의 형태와 회고 방식은 같습니다.</p>
+    </div>
+    <div class="chips rv"><span class="chip"><i></i>러닝 <small>Now</small></span><span class="chip"><i></i>걷기 <small>Now</small></span><span class="chip"><i></i>라이딩 <small>Now</small></span><span class="chip"><i></i>등산 <small>Now</small></span><span class="chip"><i></i>트레일 러닝 <small>Now</small></span><span class="chip is-next"><i></i>수영 <small>Next</small></span><span class="chip is-future"><i></i>근력 <small>Future</small></span></div>
+  </div>
+</section>
+<section class="sec sec--alt" id="privacy-stance">
+  <div class="wrap">
+    <div class="callout rv">
+      <p class="eyebrow eyebrow--plain" style="margin-bottom:18px">05 &mdash; Privacy</p>
+      <h2>운동을 시작했을 때만<br>경로를 기록합니다</h2>
+      <p class="lede">Echo는 평소 이동 경로를 기록하지 않습니다. 현재 위치 날씨를 확인하거나 사용자가 운동 기록을 시작한 경우에만 필요한 위치 기능을 사용합니다.</p>
+      <p class="note">Echo는 의료 진단, 치료 또는 응급 서비스를 제공하지 않습니다. 날씨·GPS·페이스·속도·칼로리 정보는 참고용이며 환경에 따라 실제 값과 차이가 날 수 있습니다.</p>
+      <p style="margin-top:24px"><a class="btn btn--ghost btn--sm" href="privacy/">개인정보처리방침 읽기 <span class="arr" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </div>
+</section>
+<section class="sec sec--tight" id="download">
+  <div class="wrap">
+    <div class="band rv">
+      <p class="eyebrow eyebrow--plain" style="margin-bottom:18px">Get Echo</p>
+      <h2>지금 시작하세요</h2>
+      <p class="lede">iPhone과 Apple Watch에서 바로 받을 수 있습니다. Android 버전은 준비 중입니다.</p>
+      <div class="badges"><a class="badge" href="https://apps.apple.com/kr/app/id6795827065" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.2 1.3-2.5 1.3-2.5s-2.5-1-2.5-3.6ZM14.2 5.9c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.2-.6 2.8-1.4Z"/></svg><span><small>다운로드</small><b>App Store</b></span></a><span class="badge is-disabled" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 3.1v17.8a1 1 0 0 0 1.5.86l13.1-8.9a1 1 0 0 0 0-1.72L6.1 2.24a1 1 0 0 0-1.5.86Z"/><path d="M5 2.7 15.2 12.9M5 21.3 15.2 11.1"/></svg><span><small>준비 중</small><b>Google Play</b></span></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <div class="foot__brand"><img src="assets/echo-icon.png" alt="" width="30" height="30">Echo</div>
+        <p class="small" style="max-width:34ch">러닝 · 걷기 · 자전거 GPS 운동 기록</p>
+        <p class="small" style="margin-top:14px"><a href="https://funny-square.com" target="_blank" rel="noopener">FunnySquare Inc. <span aria-hidden="true">&#8599;</span></a></p>
+      </div>
+      <div>
+        <h4>서비스</h4>
+        <ul><li><a href="features/">기능 가이드</a></li><li><a href="#download">다운로드</a></li></ul>
+      </div>
+      <div>
+        <h4>정책 · 지원</h4>
+        <ul><li><a href="privacy/">개인정보처리방침</a></li><li><a href="terms/">이용약관</a></li><li><a href="support/">지원 및 문의</a></li><li><a href="mailto:helper@gleam.com">이메일 문의</a></li></ul>
+      </div>
+    </div>
+    <div class="foot__meta">
+      <span>&copy; <span id="yr">2026</span> Echo</span>
+      <a href="https://funny-square.com" target="_blank" rel="noopener">funny-square.com</a>
+      <a class="to-top" href="#top">맨 위로 <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=20260902b"></script>
 </body>
 </html>

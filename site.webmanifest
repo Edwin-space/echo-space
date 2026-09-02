@@ -4,7 +4,14 @@
   "lang": "ko",
   "start_url": "/echo-space/",
   "display": "standalone",
-  "background_color": "#0a0d17",
-  "theme_color": "#0a0d17",
-  "icons": [{"src": "assets/echo-icon.png", "sizes": "512x512", "type": "image/png"}]
+  "background_color": "#07080B",
+  "theme_color": "#07080B",
+  "icons": [
+    {
+      "src": "assets/echo-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "description": "러닝·걷기·자전거 GPS 운동 기록"
 }
